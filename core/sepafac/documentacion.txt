@@ -1,0 +1,9 @@
+se debe consultar este api 
+
+link del api: https://cq1e.barscloud.com:612/dolPanamaRW/queryapi/apiContratosUnificados1.mf?dtsdate=2023-07-01&dtedate=2023-07-31
+
+el api tiene un header 
+	Accept	application/json
+
+luego que traiga los resultados se filtra por ranumber y company
+

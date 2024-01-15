@@ -1,5 +1,7 @@
 import subprocess
 
+print("procesando...")
+
 # Ejecutar el primer script que pasa descomprimir los archivos comprimidos y tratar las facturas
 subprocess.run(["python", "descomprimir.py"])
 

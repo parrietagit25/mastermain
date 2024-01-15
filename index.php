@@ -1,11 +1,26 @@
 <?php 
-
+session_start();
 // index.php
 require_once('controllers/UserController.php');
+require_once('controllers/MainController.php');
 
 $controller = new UserController();
+$archivos = new MainController();
 
-// Aquí deberías tener alguna lógica de enrutamiento
-// Por ejemplo, si estás en la página de inicio de sesión:
-$controller->register();
-//$controller->login();
+if (isset($_POST['casio'])) {
+    $archivos->ejecutarPython();
+}
+
+if (isset($_POST['separar'])) {
+    $archivos->separarFacturas();
+}
+
+if (!isset($_SESSION['user_id'])) {
+    $controller->login();
+}elseif(isset($_GET['pag']) && $_GET['pag'] == 'main'){
+    $controller->main();
+}elseif(isset($_GET['pag']) && $_GET['pag'] == 'reg_user'){
+    $controller->register();
+}else{
+    $controller->main();
+}

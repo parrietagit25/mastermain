@@ -39,4 +39,8 @@ class UserController {
     public function main(){
         include 'views/main.php';
     }
+
+    public function salir(){
+        include 'views/salir.php';
+    }
 }

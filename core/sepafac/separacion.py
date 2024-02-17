@@ -7,7 +7,7 @@ print("El proceso de separacion ha iniciado ...")
 
 conn = http.client.HTTPSConnection("cq1e.barscloud.com", 612)
 headers = {
-    'Cookie': 'cq_allow_progress=yes; CQCSBROWSEID=164740172199270939; CQCSID=InQd3BHh6cxe6pwOl2JynQ##'
+    'Cookie': 'cq_allow_progress=yes; CQCSBROWSEID=164740172199270939; CQCSID=qbhqwPws30vH6SrUxjErmw##'
 }
 conn.request("GET", "/dolPanamaRW/queryapi/apiSeparacion.mf?dtsdate=2016-01-01", '', headers)
 res = conn.getresponse()

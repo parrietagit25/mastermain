@@ -37,7 +37,7 @@ class UserModel extends Database{
 
     public function inicio_session($email, $password) {
 
-        session_start();
+        //session_start();
 
         $email = $email;
         $password = $password;

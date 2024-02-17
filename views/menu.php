@@ -42,7 +42,7 @@
             Perfil
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Salir</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=salir">Salir</a></li>
           </ul>
         </li>
       </ul>

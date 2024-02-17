@@ -21,6 +21,8 @@ if (!isset($_SESSION['user_id'])) {
     $controller->main();
 }elseif(isset($_GET['pag']) && $_GET['pag'] == 'reg_user'){
     $controller->register();
+}elseif(isset($_GET['pag']) && $_GET['pag'] == 'salir'){
+    $controller->salir();
 }else{
     $controller->main();
 }

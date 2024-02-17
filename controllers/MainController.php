@@ -35,26 +35,28 @@ class MainController{
 
         if (isset($_POST['separar'])) { 
 
-            //exec("python core/sepafac/separacion_facturas.py", $output, $return_var);
-            //$output2 = shell_exec('python /core/sepafac/separacion_facturas.py');
-            shell_exec('python /core/sepafac/separacion_facturas.py');
-            system('python core/sepafac/separacion_facturas.py');
-            passthru('python core/sepafac/separacion_facturas.py');
-            pclose(popen("start /B python core/sepafac/separacion_facturas.py", "r"));
-            /*echo $output;
-            echo '<pre>';
-            var_dump($output);
-            echo '</pre>';
-            echo '2-'.$output2; */
-/*
+            //exec("python C:/xampp2/htdocs/masterMain/core/sepafac/separacion_facturas.py", $output, $return_var);
+            
+                
+                // El camino al script de Python
+                $pythonScript = 'C:/xampp2/htdocs/masterMain/core/sepafac/ejepy.bat';
+                // Argumentos adicionales para el script de Python
+                $argumentos = '';
+                // Comando completo
+                $comando = "$pythonScript $argumentos";
+
+                // Ejecuta el comando
+                exec($comando, $output, $return_var);
+
+                // $output es un array con cada línea de salida del script
                 foreach ($output as $line) {
-                    echo $line . "<br>";
+                    echo $line . "\n";
                 }
-                if ($return_var == 0) {
-                    echo "Ejecución exitosa";
-                } else {
-                    echo "Error en la ejecución";
-                } */
+
+                // Verifica si hubo errores
+                if ($return_var !== 0) {
+                    echo "Error al ejecutar el script Python. Código de retorno: $return_var";
+                }
         }
     }
 

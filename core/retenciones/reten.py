@@ -18,25 +18,27 @@ conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
 cursor.execute("""SELECT
-                    [Empresa],
-                    [Documento],
-                    [FechaCreacion],
-                    [DVProveedor],
-                    [RUCProveedor],
-                    [RegistroPatronal],
-                    [RFC],
-                    [Nombre],
-                    [Mov],
-                    [UltimoCambio],
-                    [Monto],
-                    [MontoSujeto],
-                    [MontoRetenido],
-                    [eMail1]
-                FROM [dbo].[MovimientoRetencionITBMC]
-                WHERE [Mov] ='Retencion ITBMS'
-                    AND (NOT ([MontoRetenido] = '0.00') )
-                    AND convert(date,UltimoCambio)=convert(date,GETDATE())
-                    Order by RUCProveedor desc""")
+                        [Empresa],
+                        [Documento],
+                        [FechaCreacion],
+                        [DVProveedor],
+                        [RUCProveedor],
+                        [RegistroPatronal],
+                        [RFC],
+                        [Nombre],
+                        [Mov],
+                        [UltimoCambio],
+                        [Monto],
+                        [MontoSujeto],
+                        [MontoRetenido],
+                        [eMail1]
+                    FROM [dbo].[MovimientoRetencionITBMC]
+                    WHERE [Mov] ='Retencion ITBMS'
+                        AND (NOT ([MontoRetenido] = '0.00') )
+                        AND UltimoCambio >= '2024-01-01'
+                        AND UltimoCambio <= '2024-01-02'
+                        AND eMail1 NOT IN('panamakim@hotmail.com', 'mario66768@hotmail.com')
+                        Order by RUCProveedor desc""")
 
 def zipdir(path, ziph):
     # ziph es el objeto zipfile
@@ -49,16 +51,17 @@ def zipdir(path, ziph):
 email_groups = {}
 
 for row in cursor:
-    #ruc_proveedor = row.RUCProveedor
     ruc_proveedor = row.RUCProveedor.replace(" ", "_")
-    directory = f"./{ruc_proveedor}"
-    if not os.path.exists(directory):
-        os.makedirs(directory)   
+    documento = row.Documento.replace(" ", "_").replace("/", "_").replace("\\", "_")  # Asegurar nombres de archivo válidos
     
-    documento = row.Documento.replace(" ", "_")
-
-    pdf_file = f"{directory}/{documento}.pdf"
-    c = canvas.Canvas(pdf_file)
+    # Construye el directorio principal
+    directory = os.path.join(".", f"{ruc_proveedor}")
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    
+    pdf_file_name = f"{documento}.pdf"
+    pdf_file_path = os.path.join(directory, pdf_file_name)
+    c = canvas.Canvas(pdf_file_path)
     
     texto = "Tu texto aquí"
     fuente = "Helvetica"
@@ -111,6 +114,7 @@ for row in cursor:
     
     c.rect(x_rect, y_rect, ancho_rect, alto_rect)
     
+    print(f"Guardando archivo en: {pdf_file_path}")
     c.save()
     
     # Comprimir la carpeta
@@ -118,33 +122,66 @@ for row in cursor:
     zipdir(directory, zipf)
     zipf.close()
     
-    #email = row.eMail1
-    email = "tayronperez17@gmail.com"  # Email de prueba
+    #email = row.eMail1 # mail de produccion 
+    email = "pedro.arrieta@grupopcr.com.pa"  # Email de prueba
+    if email is None:
+        print("Registro sin correo electrónico, saltando...")
+        continue  # Saltar este registro y continuar con el sig
+    
     if email not in email_groups:
         email_groups[email] = []
     email_groups[email].append(f'{directory}.zip')
 
+n = 0
 for email, files in email_groups.items():
+    
+    if n >= 1:
+        continue
+    
+    zip_file_path = f"./{email.replace('@', '_').replace('.', '_')}.zip"
+    with zipfile.ZipFile(zip_file_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        for file_path in files:
+            zipf.write(file_path, os.path.basename(file_path))    
+    
+    
     subject = "Retenciones"
     body = "Retenciones"
-
     msg = EmailMessage()
     msg["From"] = "notificaciones1@grupopcr.com.pa"
     msg["To"] = email
     msg["Subject"] = subject
     msg.set_content(body)
-
+    
     for file_path in files:
-        with open(file_path, 'rb') as file:
-            msg.add_attachment(file.read(), maintype='application', subtype='octet-stream', filename=os.path.basename(file_path))
+        # Obtiene el tamaño del archivo en bytes
+        file_size = os.path.getsize(file_path)
+        # Convierte el tamaño del archivo a megabytes (MB)
+        file_size_mb = file_size / (1024 * 1024)
+        print(f"Preparando para adjuntar: {os.path.basename(file_path)} de tamaño: {file_size_mb:.2f} MB")
+        
+        if file_size_mb > 30:  # Asumiendo un límite de 25MB, ajusta según sea necesario
+                print(f"El archivo {os.path.basename(file_path)} excede el tamaño máximo permitido y no será enviado.")
+                continue  # Salta este archivo
 
-    # Usar SMTP con STARTTLS
-    with smtplib.SMTP('smtp-mail.outlook.com', 587) as smtp:
-        smtp.ehlo()  # Identificar al servidor
-        smtp.starttls()  # Iniciar modo TLS
-        smtp.ehlo()  # Identificar de nuevo al servidor en modo TLS
-        smtp.login("notificaciones1@grupopcr.com.pa", "Dollar2023.")
-        smtp.send_message(msg)
+        with open(zip_file_path, 'rb') as file:
+            msg.add_attachment(file.read(), maintype='application', subtype='octet-stream', filename=os.path.basename(zip_file_path))
+    
+        # Usar SMTP para enviar el correo
+    try:
+        # Usar SMTP para enviar el correo
+        with smtplib.SMTP('smtp-mail.outlook.com', 587) as smtp:
+            smtp.ehlo()
+            smtp.starttls()
+            smtp.ehlo()
+            smtp.login("notificaciones1@grupopcr.com.pa", "Chicho1787$$$")
+            smtp.send_message(msg)
+            print(f"Correo enviado a: {email}")
+            
+            n = n + 1
+    except smtplib.SMTPSenderRefused as e:
+        print(f"No se pudo enviar el correo a {email}: {e}")
+
+        print(f"Correo enviado a: {email}")
 
 def eliminar_carpetas_y_rar(directorio):
     for nombre in os.listdir(directorio):
@@ -164,3 +201,5 @@ eliminar_carpetas_y_rar(directorio_especifico)
       
 cursor.close()
 conn.close()
+
+# mandar pagina web

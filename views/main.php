@@ -4,6 +4,23 @@
     <h1>Bienvenido al Master Main</h1>
 
     <br>
+    <?php while ($listado_jobs = $jobs -> FETCH_ASSOC()) { ?>
+
+        <div class="container" style="border: solid 1px black">
+            <h2><?php echo $listado_jobs['titulo']; ?></h2>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <div>
+                    <label for="fileUpload"><?php echo $listado_jobs['descripcion']; ?></label>
+                </div>
+                
+            </form>
+            <br>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-primary" name="separar">Acciones</button>
+            </form>
+        </div>
+       
+    <?php } ?>
     <!--<div class="container" style="border: solid 1px black">
         <h2>Separacion de Facturas</h2>
         <form action="" method="post" enctype="multipart/form-data" >

@@ -5,13 +5,15 @@
 
 class JobsModel extends Database{
 
+    private $connec;
+
     public function __construct() {
-        $this->conectarSQL(); 
+        $this->connec = new getConnection();
     }
 
-    public function getDatosFaltantes() {
+    public function jobs_list() {
 
-        $stmt = $this->conn->prepare("SELECT * FROM InterWeb_Automarket_datosFaltantes");
+        $stmt = $this->connec->prepare("SELECT * FROM jos");
         $stmt->execute();
         $datos_faltantes = $stmt->fetch(PDO::FETCH_ASSOC);
         return $datos_faltantes;
@@ -26,7 +28,7 @@ class JobsModel extends Database{
         $columns = implode(", ", array_keys($data));
         $values = ":" . implode(", :", array_keys($data));
         $query = "INSERT INTO $table ($columns) VALUES ($values)";
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->connec->prepare($query);
         foreach ($data as $key => $value) {
             $stmt->bindValue(":$key", $value);
         }

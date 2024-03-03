@@ -21,12 +21,13 @@ if (!isset($_SESSION['user_id'])) {
     $controller->login();
 }elseif(isset($_GET['pag']) && $_GET['pag'] == 'main'){
     $controller->main();
-    $jobs->obtener_datos_faltantes();
+    $jobs->jobs_list();
+
 }elseif(isset($_GET['pag']) && $_GET['pag'] == 'reg_user'){
     $controller->register();
 }elseif(isset($_GET['pag']) && $_GET['pag'] == 'salir'){
     $controller->salir();
 }else{
     $controller->main();
-    $jobs->obtener_datos_faltantes();
+    $jobs->jobs_list();
 }

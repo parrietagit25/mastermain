@@ -4,6 +4,23 @@
     <h1>Bienvenido al Master Main</h1>
 
     <br>
+    <?php while ($listado_jobs = $jobs -> FETCH_ASSOC()) { ?>
+
+        <div class="container" style="border: solid 1px black">
+            <h2><?php echo $listado_jobs['titulo']; ?></h2>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <div>
+                    <label for="fileUpload"><?php echo $listado_jobs['descripcion']; ?></label>
+                </div>
+                
+            </form>
+            <br>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-primary" name="separar">Acciones</button>
+            </form>
+        </div>
+       
+    <?php } ?>
     <!--<div class="container" style="border: solid 1px black">
         <h2>Separacion de Facturas</h2>
         <form action="" method="post" enctype="multipart/form-data" >
@@ -34,7 +51,6 @@
         </div>
     </div>
 
-
     <div class="card text-center" style="width:300px; float:left; margin:5px;">
         <div class="card-header">
             Operaciones
@@ -42,7 +58,7 @@
         <div class="card-body">
             <h5 class="card-title"></h5>
             <p class="card-text">Listado de placas con datos faltantes.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModalDinamico">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDinamica" onclick="modal_dinamica()">
                 Ver
             </button>
         </div>
@@ -51,22 +67,19 @@
         </div>
     </div>
 
+    <?php 
+    
+    echo '<pre>';
+    echo var_dump($jobs);
+    echo '</pre>';
+    
+    ?>
+
     <!-- Modal Dinamica -->
-    <div class="modal fade" id="miModalDinamico" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalDinamica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel">Título Dinámico</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- El contenido dinámico se cargará aquí -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
+            <div class="modal-content" id="modal_dinamico">
+                
             </div>
         </div>
     </div>

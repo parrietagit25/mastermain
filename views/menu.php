@@ -19,6 +19,15 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kuruma
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subir Comisiones</a></li>
+            <li><a class="dropdown-item" href="#">Reporte de Comisiones</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Modulos
           </a>
           <ul class="dropdown-menu">

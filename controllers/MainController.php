@@ -1,6 +1,14 @@
 <?php 
 
+require_once 'models/JobsModel.php';
+
 class MainController{
+
+    private $model;
+
+    public function __construct() {
+        $this->model = new JobsModel();
+    }
 
     public function ejecutarPython(){
 
@@ -58,6 +66,12 @@ class MainController{
                     echo "Error al ejecutar el script Python. Código de retorno: $return_var";
                 }
         }
+    }
+
+    public function jobs_list(){
+
+        return $this->model->inicio_session();
+
     }
 
 }

@@ -22,7 +22,7 @@
             Kuruma
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Subir Comisiones</a></li>
+            <li><a class="dropdown-item" href="#">Registrar Colaborador</a></li>
             <li><a class="dropdown-item" href="#">Reporte de Comisiones</a></li>
           </ul>
         </li>

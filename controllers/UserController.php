@@ -7,7 +7,7 @@ class UserController {
     private $model;
 
     public function __construct() {
-        $this->model = new JobsModel();
+        $this->model = new UserModel();
     }
 
     public function register() {
@@ -27,6 +27,7 @@ class UserController {
         if (isset($_POST['session'])) {
             
             $this->model->inicio_session($_POST['email'], $_POST['password']);
+            $jobsController->jobs_list();
             include 'views/main.php';
             
         }else{

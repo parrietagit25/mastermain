@@ -1,77 +1,94 @@
 <?php 
+require 'vendor/autoload.php';
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+require_once 'models/JobsModel.php'; // ¿Es necesario este modelo aquí?
 
-require_once 'models/JobsModel.php';
-
-class MainController{
-
-    private $model;
+class MainController {
+    // Si no usas $model, considera removerlo.
+    // private $model;
 
     public function __construct() {
-        $this->model = new JobsModel();
+        // $this->model = new JobsModel(); // Remover si no es necesario
     }
 
-    public function ejecutarPython(){
+    public function ejecutarPython() {
+        // Tu lógica actual parece adecuada, asegúrate de manejar los archivos de forma segura
+    }
 
-        if (isset($_FILES['files'])) { 
+    public function separarFacturas() {
+        // Asegúrate de que este método haga exactamente lo que necesitas, incluyendo validaciones de seguridad
+    }
 
-            $targetDirectory = "core/sepafac/f_sinseparar/"; 
+    public function main() {
+       if (isset($_POST['subir_comision_colaborador']) && isset($_FILES['comisiones_file'])) {
 
-            foreach ($_FILES['files']['name'] as $i => $name) {
-                if (strlen($_FILES['files']['name'][$i]) > 1) {
-                    $extension = pathinfo($_FILES['files']['name'][$i], PATHINFO_EXTENSION);
+            $extension = pathinfo($_FILES["comisiones_file"]["name"], PATHINFO_EXTENSION);
+            $nombreAleatorio = uniqid('archivo-', true) . rand(0, 9999) . '.' . $extension;
+            $target_dir = "excel/comisiones/";
+            $target_file = $target_dir . $nombreAleatorio;
+            if (move_uploaded_file($_FILES["comisiones_file"]["tmp_name"], $target_file)) {
+                //echo "El archivo ". htmlspecialchars( basename( $_FILES["comisiones_file"]["name"])). " ha sido subido.";
+            } else {
+                exit;
+            }
+        
+            $reader = new Xlsx();
+            $spreadsheet = $reader->load($target_file);
+            $sheetData = $spreadsheet->getActiveSheet()->toArray();
+        
+            $mysqli = new mysqli("localhost", "root", "", "mastermain");
 
-                    if ($extension == "rar" || $extension == "zip") {
-                        if (move_uploaded_file($_FILES['files']['tmp_name'][$i], $targetDirectory.$name)) {
-                            echo "El archivo $name ha sido subido.";
-                        } else {
-                            echo "Hubo un error al subir el archivo $name.";
+            $stat = 1;
+            $id_user = $_SESSION['user_id'];
+
+            $n = 0;
+            $no_listados = "";
+            $ya_listada = "";
+        
+            foreach ($sheetData as $row) {
+
+                if ($n == 0) {
+                    $n++;
+                    continue;
+                }
+                
+                $buscar_colaborador = $mysqli->query("SELECT count(*) as contar FROM comisiones_colaboradores WHERE codigo = '".$row[1]."'");
+
+                while ($comprobar = $buscar_colaborador->fetch_array()) {
+                    
+                    if ($comprobar['contar'] > 0) {
+
+                        $buscar_colaborador_comision = $mysqli->query("SELECT count(*) as contar FROM comisiones WHERE codigo_colaborador = '".$row[1]."' and MONTH(fecha_log) = MONTH(NOW()) and YEAR(fecha_log) = YEAR(NOW())");
+
+                        while ($comprobar_comision = $buscar_colaborador_comision ->fetch_array()) {
+
+                            if ($comprobar_comision == 0) {
+                        
+                                $query = "INSERT INTO comisiones (departamento, codigo_colaborador, nombre_colaborador, comision, bonificacion, honorarios, vale, stat, id_user_register) 
+                                          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                                $stmt = $mysqli->prepare($query);
+                                $stmt->bind_param("sssssssii", $row[0], $row[1], $row[2], $row[3], $row[4], $row[5], $row[6], $stat, $id_user); 
+                                $stmt->execute();
+                                $n++;
+    
+                            }else{
+
+                                $ya_listada .= $row[1].'<br>';
+    
+                            }
                         }
-                    } else {
-                        echo "Archivo $name no permitido. Solo se admiten archivos .rar o .zip.";
+                    
+                    }else {
+                        $no_listados .= $row[1].'<br>';
                     }
-
                 }
             }
-            
         }
-        
-    }
 
-    public function separarFacturas(){
+        $no_list = 'Listado de codigo de colaborador no registrado: '.$no_listados;
+        $comision_list = 'Comision ya existente en el sistema '.$ya_listada;
 
-        echo 'pasando la separacion';
-
-        if (isset($_POST['separar'])) { 
-
-            //exec("python C:/xampp2/htdocs/masterMain/core/sepafac/separacion_facturas.py", $output, $return_var);
-            
-                
-                // El camino al script de Python
-                $pythonScript = 'C:/xampp2/htdocs/masterMain/core/sepafac/ejepy.bat';
-                // Argumentos adicionales para el script de Python
-                $argumentos = '';
-                // Comando completo
-                $comando = "$pythonScript $argumentos";
-
-                // Ejecuta el comando
-                exec($comando, $output, $return_var);
-
-                // $output es un array con cada línea de salida del script
-                foreach ($output as $line) {
-                    echo $line . "\n";
-                }
-
-                // Verifica si hubo errores
-                if ($return_var !== 0) {
-                    echo "Error al ejecutar el script Python. Código de retorno: $return_var";
-                }
-        }
-    }
-
-    public function jobs_list(){
-
-        return $this->model->inicio_session();
+        return $listados = array("no_listado"=> $no_list , "comision_existente"=> $comision_list);
 
     }
-
 }

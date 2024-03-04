@@ -1,0 +1,17 @@
+{
+    "name": "pedro/mastermain",
+    "autoload": {
+        "psr-4": {
+            "Pedro\\Mastermain\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "parrietagit25",
+            "email": "pedroarrieta25@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.0"
+    }
+}

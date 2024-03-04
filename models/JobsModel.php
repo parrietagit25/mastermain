@@ -1,41 +1,30 @@
-<?php 
+<?php
 
-//include 'coneccion.php';
+include_once 'Database.php'; // Asegura la inclusión correcta del archivo
 
-
-class JobsModel extends Database{
-
-    private $connec;
-
-    public function __construct() {
-        $this->connec = new getConnection();
-    }
-
+class JobsModel extends Database {
+    
     public function jobs_list() {
-
-        $stmt = $this->connec->prepare("SELECT * FROM jos");
+        // Asumiendo que usas MySQL
+        $conn = $this->getMySQLConnection(); // Obtiene la conexión a la base de datos MySQL
+        $stmt = $conn->prepare("SELECT * FROM jos"); // Asegúrate de que la tabla se llame 'jobs'
         $stmt->execute();
-        $datos_faltantes = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $datos_faltantes;
-        
+        return $stmt->fetchAll(PDO::FETCH_ASSOC); // Obtiene todos los registros
     }
 
-    // Método para insertar datos
     public function insert($table, $data) {
+        // Asumiendo que usas MySQL
+        $conn = $this->getMySQLConnection(); // Obtiene la conexión
         if (empty($data) || !is_array($data)) {
             return false;
         }
         $columns = implode(", ", array_keys($data));
         $values = ":" . implode(", :", array_keys($data));
         $query = "INSERT INTO $table ($columns) VALUES ($values)";
-        $stmt = $this->connec->prepare($query);
+        $stmt = $conn->prepare($query);
         foreach ($data as $key => $value) {
             $stmt->bindValue(":$key", $value);
         }
-        if ($stmt->execute()) {
-            return true;
-        }
-        return false;
+        return $stmt->execute();
     }
-
 }

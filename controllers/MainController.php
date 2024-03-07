@@ -62,7 +62,7 @@ class MainController {
 
                         while ($comprobar_comision = $buscar_colaborador_comision ->fetch_array()) {
 
-                            if ($comprobar_comision == 0) {
+                            if ($comprobar_comision['contar'] == 0) {
                         
                                 $query = "INSERT INTO comisiones (departamento, codigo_colaborador, nombre_colaborador, comision, bonificacion, honorarios, vale, stat, id_user_register) 
                                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";

@@ -26,6 +26,24 @@ class UserModel extends Database {
     }
 
     public function insert($table, $data) {
-        // La implementación sería similar a la proporcionada en JobsModel
+        $conn = $this->getMySQLConnection(); // Obtiene la conexión
+        if (empty($data) || !is_array($data)) {
+            return false;
+        }
+        $columns = implode(", ", array_keys($data));
+        $values = ":" . implode(", :", array_keys($data));
+        $query = "INSERT INTO $table ($columns) VALUES ($values)";
+        $stmt = $conn->prepare($query);
+        foreach ($data as $key => $value) {
+            $stmt->bindValue(":$key", $value);
+        }
+        return $stmt->execute();
+    }
+
+    public function all_user() {
+        $conn = $this->getMySQLConnection();
+        $stmt = $conn->prepare("SELECT * FROM usuarios");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }

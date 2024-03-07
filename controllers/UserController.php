@@ -12,13 +12,12 @@ class UserController {
 
     public function register() {
 
-        if (isset($_POST['pass'])) {
+        if (isset($_POST['registrar_usuario'])) {
             $_POST['pass'] = password_hash($_POST['pass'], PASSWORD_DEFAULT);
             $this->model->insert('usuarios', $_POST);
-            // Redirigir al usuario a la página de inicio de sesión o a donde prefieras
             echo 'Usuario Registrado';
         }
-
+        
         include 'views/register_user.php';
     }
 
@@ -35,6 +34,25 @@ class UserController {
             include 'views/login.php';
 
         }
+    }
+
+    public function all_users(){
+        return $this->model->all_user();
+    }
+
+    public function getAndShowAllUsers() {
+
+        if (isset($_POST['registrar_usuario'])) {
+
+            unset($_POST['registrar_usuario']);
+
+            $_POST['pass'] = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+            $this->model->insert('usuarios', $_POST);
+            echo 'Usuario Registrado';
+        }
+
+        $all_users = self::all_users(); 
+        include 'views/register_user.php'; 
     }
 
     public function main(){

@@ -2,33 +2,50 @@
 <?php include 'header.php'; ?>
 <?php include 'menu.php'; ?>
 <div class="container mt-5">
-    <h2>Formulario de Registro</h2>
-    <form action="" method="post">
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="pass">Contraseña:</label>
-            <input type="password" class="form-control" id="pass" name="pass" required>
-        </div>
-        <div class="form-group">
-            <label for="tipo_usuario">Tipo de Usuario:</label>
-            <select class="form-control" id="tipo_usuario" name="tipo_usuario">
-                <option value="admin">Seleccionar</option>
-                <option value="admin">Admin</option>
-                <option value="rrhh">RRHH</option>
-                <option value="contabilidad">Contabilidad</option>
-                <option value="operaciones">Operaciones</option>
-                <option value="mercadeo">Mercadeo</option>
-            </select>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-primary">Registrar</button>
-    </form>
+    <h2>Usuarios</h2>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDinamica" onclick="modal_dinamica(2)">
+        Registrar Usuario
+    </button>
+    <br>
+    <br>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">tipo de ususario</th>
+            <th scope="col">Fecha de registro</th>
+            <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (isset($all_users) && !empty($all_users)) {
+                    foreach ($all_users as $user) { ?>
+            <tr>
+                <th scope="row"><?php echo $user['id']; ?></th>
+                <td><?php echo $user['nombre']; ?></td>
+                <td><?php echo $user['email']; ?></td>
+                <td><?php echo $user['tipo_usuario']; ?></td>
+                <td><?php echo $user['fecha_log']; ?></td>
+                <td> <input type="button" value="Editar" class="btn btn-primary"><input type="button" value="Pass" class="btn btn-danger"> </td>
+            </tr>
+            <?php  }
+                } else {
+                    echo "No hay usuarios registrados.";
+                }
+                    ?>
+        </tbody>
+    </table>
 </div>
+
+    <!-- Modal Dinamica -->
+    <div class="modal fade" id="modalDinamica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal_dinamico">
+                
+            </div>
+        </div>
+    </div>
 <?php include 'footer.php'; ?>

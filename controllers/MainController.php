@@ -1,22 +1,43 @@
 <?php 
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
-require_once 'models/JobsModel.php'; // ¿Es necesario este modelo aquí?
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require_once 'models/ColaboradorModel.php';
 
 class MainController {
     // Si no usas $model, considera removerlo.
     // private $model;
 
     public function __construct() {
-        // $this->model = new JobsModel(); // Remover si no es necesario
+        $this->model = new ColaboradorModel(); // Asegúrate de que esto se refiere a tu modelo real
     }
 
     public function ejecutarPython() {
-        // Tu lógica actual parece adecuada, asegúrate de manejar los archivos de forma segura
+        
     }
 
     public function separarFacturas() {
-        // Asegúrate de que este método haga exactamente lo que necesitas, incluyendo validaciones de seguridad
+        
+    }
+
+    public function all_comisiones(){
+        $desde = "";
+        $hasta = "";
+        if (isset($_POST['desde'])) {
+            $desde = $_POST['desde'];
+        }
+        if (isset($_POST['hasta'])) {
+            $hasta = $_POST['hasta'];
+        }
+        $comisiones = $this->model->all_comisiones($desde, $hasta);
+        include_once 'views/reporte_comisiones.php';
+    }
+
+    public function reporte_comisiones(){
+
+
+
     }
 
     public function main() {
@@ -83,6 +104,35 @@ class MainController {
                     }
                 }
             }
+
+            $mail = new PHPMailer(true);
+
+            try {
+                // Configuración del servidor de correo y envío de email
+                $mail->isSMTP();
+                $mail->Host = 'smtp.example.com';
+                $mail->SMTPAuth = true;
+                $mail->Username = 'user@example.com';
+                $mail->Password = 'secret';
+                $mail->SMTPSecure = 'tls';
+                $mail->Port = 587;
+
+                // Destinatarios
+                $mail->setFrom('from@example.com', 'Mailer');
+                $mail->addAddress('to@example.com', 'Joe User'); // Agregar un destinatario
+
+                // Contenido
+                $mail->isHTML(true); // Establecer formato de email a HTML
+                $mail->Subject = 'Nombre Subio las comisiones';
+                $mail->Body    = 'Este es el cuerpo del mensaje en HTML <b>en negrita!</b>';
+                $mail->AltBody = 'Este es el cuerpo en texto plano para clientes de correo no HTML';
+
+                $mail->send();
+                //echo 'Mensaje enviado';
+            } catch (Exception $e) {
+                //echo "El mensaje no pudo ser enviado. Error de Mailer: {$mail->ErrorInfo}";
+            }
+
         }
 
         $no_list = 'Listado de codigo de colaborador no registrado: '.$no_listados;

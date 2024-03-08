@@ -41,6 +41,9 @@ if (!isset($_SESSION['user_id'])) {
                 $colaboradorController->all_colab();
                 $colaboradorController->getAndShowAllColab(); 
                 break;
+            case 'rep_comisiones':
+                $mainController->all_comisiones();
+                break;
             default:
                 //$mainController->main();
                 $jobsController->jobs_list();

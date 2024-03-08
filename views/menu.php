@@ -23,7 +23,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
-            <li><a class="dropdown-item" href="#">Reporte de Comisiones</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte de Comisiones</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

@@ -25,4 +25,23 @@ class ColaboradorModel extends Database {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function all_comisiones($desde, $hasta){
+
+        //echo "SELECT * FROM comisiones WHERE fecha_log >= '".$desde."' AND fecha_log <= '".$hasta."'";
+
+        if ($desde == '' || $hasta == '') {
+
+         return NULL;   
+         
+        }else{
+
+        $conn = $this->getMySQLConnection();
+        $stmt = $conn->prepare("SELECT * FROM comisiones WHERE fecha_log >= '".$desde."' AND fecha_log <= '".$hasta."'");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        }
+
+    }
 }

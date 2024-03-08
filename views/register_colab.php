@@ -9,7 +9,7 @@
     </button>
     <br>
     <br>
-    <table class="table table-hover">
+    <table class="table table-hover" id="tabla_date">
         <thead>
             <tr>
             <th scope="col">ID</th>

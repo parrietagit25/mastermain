@@ -105,7 +105,7 @@ class MainController {
                 }
             }
 
-            $mail = new PHPMailer(true);
+            /*$mail = new PHPMailer(true);
 
             try {
                 // Configuración del servidor de correo y envío de email
@@ -131,7 +131,7 @@ class MainController {
                 //echo 'Mensaje enviado';
             } catch (Exception $e) {
                 //echo "El mensaje no pudo ser enviado. Error de Mailer: {$mail->ErrorInfo}";
-            }
+            } */
 
         }
 

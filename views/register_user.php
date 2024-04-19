@@ -29,7 +29,10 @@
                 <td><?php echo $user['email']; ?></td>
                 <td><?php echo $user['tipo_usuario']; ?></td>
                 <td><?php echo $user['fecha_log']; ?></td>
-                <td> <input type="button" value="Editar" class="btn btn-primary"><input type="button" value="Pass" class="btn btn-danger"> </td>
+                <td> 
+                    <input type="button" value="Editar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDinamica" onclick="modal_dinamica_editar(1, <?php echo $user['id']; ?>)">
+                    <input type="button" value="Pass" class="btn btn-danger"> 
+                </td>
             </tr>
             <?php  }
                 } else {

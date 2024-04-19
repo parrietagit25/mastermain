@@ -26,7 +26,8 @@ class UserController {
         if (isset($_POST['session'])) {
             
             $this->model->inicio_session($_POST['email'], $_POST['password']);
-            $jobsController->jobs_list();
+            //$jobsController->jobs_list();
+            header("Refresh:0");
             include 'views/main.php';
             
         }else{
@@ -61,5 +62,9 @@ class UserController {
 
     public function salir(){
         include 'views/salir.php';
+    }
+
+    public function editar_user($id_user){
+        return $this->model->editar_user();
     }
 }

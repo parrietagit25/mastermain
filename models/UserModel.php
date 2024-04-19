@@ -46,4 +46,11 @@ class UserModel extends Database {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function editar_user($id_user) {
+        $conn = $this->getMySQLConnection();
+        $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = '".$id_user."'");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

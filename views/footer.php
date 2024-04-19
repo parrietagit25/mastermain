@@ -28,5 +28,26 @@
                   .catch(error => console.error('Error al cargar el archivo dinamico:', error));
       }
     </script>
+    <script>
+      function modal_dinamica_editar(x, id_user){
+          const datos = new URLSearchParams(x);
+          datos.append('jobs', x);
+          datos.append('id_user', id_user);
+          const opciones = {
+              method: 'POST', 
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded' 
+              },
+              body: datos 
+          };
+          fetch('views/carga_dinamica_editar.php', opciones)
+                  .then(response => response.text()) 
+                  .then(data => {
+                      const div = document.getElementById('modal_dinamico');
+                      div.innerHTML = data;
+                  })
+                  .catch(error => console.error('Error al cargar el archivo dinamico:', error));
+      }
+    </script>
   </body>
 </html>

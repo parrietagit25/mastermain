@@ -42,9 +42,9 @@ class Database {
 } */
 class Database {
     private $mysql_host = "localhost";
-    private $mysql_db_name = "mastermain";
-    private $mysql_username = "root";
-    private $mysql_password = "";
+    private $mysql_db_name = "dbghw4ezirxtu6";
+    private $mysql_username = "uog7nnpvxjdax";
+    private $mysql_password = "Chicho1787$$$";
     
     private $sql_server_connection_string = "odbc:Driver={SQL Server};Server=PEDRO\SQLEXPRESS;Database=PCR;Trusted_Connection=yes;";
 

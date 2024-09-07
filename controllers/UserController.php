@@ -25,9 +25,13 @@ class UserController {
 
         if (isset($_POST['session'])) {
             
-            $this->model->inicio_session($_POST['email'], $_POST['password']);
-            $jobsController->jobs_list();
-            include 'views/main.php';
+            //$this->model->inicio_session($_POST['email'], $_POST['password']);
+            if ($this->model->inicio_session($_POST['email'], $_POST['password'])) {
+                include 'views/main.php';
+            }else{
+                include 'views/login.php';
+            }
+           // $jobsController->jobs_list();
             
         }else{
 

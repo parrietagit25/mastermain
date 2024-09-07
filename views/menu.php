@@ -14,38 +14,36 @@
             Usuarios
           </a>
           <ul class="dropdown-menu">
+          <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'rrhh'){ ?>
             <li><a class="dropdown-item" href="index.php?pag=reg_user">Usuarios</a></li>
+             <?php } ?>
           </ul>
+         
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Kuruma
           </a>
           <ul class="dropdown-menu">
+              <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'rrhh'){ ?>
             <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
-            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte de Comisiones</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte PayDay</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_anio">Reporte de comisiones</a></li>
+            <?php } ?>
           </ul>
         </li>
+        <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'reporteria' || $_SESSION['tipo_usuario'] == 'comi-repor'){ ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Modulos
+            Reportes
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Finanzas</a></li>
-            <li><a class="dropdown-item" href="#">Inventario</a></li>
-            <li><a class="dropdown-item" href="#">Comisiones</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=duebacks">Reporte DueBacks</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=retenciones">Retenciones</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=reservadiaanterior">Reserva dia Anterior</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Documentaciion
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Finanzas</a></li>
-            <li><a class="dropdown-item" href="#">Inventario</a></li>
-            <li><a class="dropdown-item" href="#">Comisiones</a></li>
-          </ul>
-        </li>
+        <?php } ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Perfil

@@ -1,0 +1,473 @@
+[06-May-2024 18:34:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php:7
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php(7): mysqli->__construct()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 7
+[07-May-2024 02:24:04 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:05 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:06 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:06 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:07 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:07 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:24:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:06 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:32 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:25:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:16 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:20 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:20 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:21 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:22 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:23 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:24 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:27 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:30:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:38:31 UTC] PHP Warning:  Undefined variable $colaboradorController in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:38:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_colab_id() on null in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 8
+[07-May-2024 02:43:48 UTC] PHP Warning:  require_once(controllers/ColaboradorController.php): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 6
+[07-May-2024 02:43:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/ColaboradorController.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 6
+[07-May-2024 02:45:55 UTC] PHP Warning:  require_once(models/ColaboradorModel.php): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\controllers\ColaboradorController.php on line 3
+[07-May-2024 02:45:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'models/ColaboradorModel.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\controllers\ColaboradorController.php:3
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php(6): require_once()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\ColaboradorController.php on line 3
+[07-May-2024 02:51:35 UTC] PHP Warning:  require_once(../controllers/ColaboradorController.php?modal=1): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 6
+[07-May-2024 02:51:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../controllers/ColaboradorController.php?modal=1' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\carga_dinamica_edit.php on line 6
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[10-Jun-2024 13:38:37 UTC] PHP Warning:  Undefined array key 1 in C:\inetpub\wwwroot\mastermain\views\csv_comisiones.php on line 9
+[05-Jul-2024 03:33:15 UTC] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php on line 2
+[05-Jul-2024 03:33:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php on line 2
+[05-Jul-2024 03:34:09 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php:25
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php on line 25
+[05-Jul-2024 03:34:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php on line 26
+[05-Jul-2024 03:35:39 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\excelduebacks.php on line 9
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "departamentp" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 32
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined array key "horarios" in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 37
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:12:03 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:12:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php:32) in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 53
+[05-Jul-2024 15:12:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php:32) in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 54
+[05-Jul-2024 15:12:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php:32) in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 55
+[05-Jul-2024 15:13:05 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:13:05 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:13:05 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:13:39 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:13:39 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[05-Jul-2024 15:13:39 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\rep_comisiones_excel.php on line 45
+[15-Jul-2024 15:48:25 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 15:48:25 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 15:48:25 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 15:55:04 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 15:55:04 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 15:55:04 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:15:18 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 76
+[15-Jul-2024 16:15:18 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 76
+[15-Jul-2024 16:15:18 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 76
+[15-Jul-2024 16:36:55 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:36:55 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:36:55 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:37:27 UTC] PHP Warning:  Undefined variable $response_arry in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:37:27 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:37:27 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 72
+[15-Jul-2024 16:40:56 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:40:57 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 101
+[15-Jul-2024 16:41:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 102
+[15-Jul-2024 16:41:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 103
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 73
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 101
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 102
+[15-Jul-2024 16:41:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php:73) in C:\inetpub\wwwroot\mastermain\views\excelreservasdiaanterior.php on line 103

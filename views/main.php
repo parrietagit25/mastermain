@@ -1,77 +1,29 @@
 <?php include 'header.php'; ?>
 <?php include 'menu.php'; ?>
+<?php 
+require_once('controllers/UserController.php');
+$jobsController = new JobsController();
+?>
 <div class="container">
     <h1>Bienvenido al Master Main</h1>
 
     <br>
-    <?php /* while ($listado_jobs = $jobs -> FETCH_ASSOC()) { ?>
-        <div class="container" style="border: solid 1px black">
-            <h2><?php echo $listado_jobs['titulo']; ?></h2>
-            <form action="" method="post" enctype="multipart/form-data" >
-                <div>
-                    <label for="fileUpload"><?php echo $listado_jobs['descripcion']; ?></label>
-                </div>
-            </form>
-            <br>
-            <form action="" method="post">
-                <button type="submit" class="btn btn-primary" name="separar">Acciones</button>
-            </form>
-        </div>
-    <?php } */ /* ?>
-    <!--<div class="container" style="border: solid 1px black">
-        <h2>Separacion de Facturas</h2>
-        <form action="" method="post" enctype="multipart/form-data" >
-            <div>
-                <label for="fileUpload">Seleccionar archivos (.rar, .zip):</label>
-                <input type="file" name="files[]" id="fileUpload" multiple="multiple" accept=".rar,.zip">
-                <input type="hidden" name="casio" value="aaaaa">
-            </div>
-            <button type="submit">Subir Archivos</button>
-        </form>
-        <br>
-        <form action="" method="post">
-            <button type="submit" class="btn btn-primary" name="separar">Separar</button>
-        </form>
-    </div> -->
-
-    <div class="card text-center" style="width:300px; float:left; margin:5px;">
-        <div class="card-header">
-            Separacion de Facturas
-        </div>
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">Seleccionar archivos (.rar, .zip):</p>
-            <a href="#" class="btn btn-primary">Subir</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-            Separar: 
-        </div>
-    </div>
-
-    <div class="card text-center" style="width:300px; float:left; margin:5px;">
-        <div class="card-header">
-            Operaciones
-        </div>
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">Listado de placas con datos faltantes.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDinamica" onclick="modal_dinamica()">
-                Ver
-            </button>
-        </div>
-        <div class="card-footer text-body-secondary">
-            Cantidad: 
-        </div>
-    </div>
-
-    <?php */ /* $jobsController
     
-    echo '<pre>';
-    echo var_dump($jobs);
-    echo '</pre>'; */
-    ?>
-
     <?php foreach ($jobsController->jobs_list() as $key => $value) { ?>
+
+        <?php /* if($_SESSION['tipo_usuario'] == 'rrhh'){ 
+                if ($value['id'] != 1) {
+                    continue;
+                }
+              }
+              
+            echo $_SESSION['user_id'].'<br>';
+            echo $_SESSION['username'].'<br>';
+            echo $_SESSION['tipo_usuario'].'<br>'; */ 
+              
+              ?>
+
+        <?php if($_SESSION['tipo_usuario'] == 'reporteria'){ }else{ ?>
 
         <div class="card text-center" style="width:300px; float:left; margin:5px;">
             <div class="card-header">
@@ -88,6 +40,8 @@
                 Cantidad: 
             </div>
         </div>
+
+        <?php } ?>
 
     <?php } ?>
 

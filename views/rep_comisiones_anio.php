@@ -28,7 +28,6 @@ if (isset($_POST['desde']) && isset($_POST['hasta'])) {
 
     while ($comision = $comisiones->fetch_assoc()) {
         $comision_val = $comision['comision'];
-        $bonificacion = $comision['bonificacion'];
         
         if($comision_val == 0 || $comision_val == 0.00){
             $comision_val = '';
@@ -40,42 +39,12 @@ if (isset($_POST['desde']) && isset($_POST['hasta'])) {
             $comision_val = decimal_0($comision_val);
         }
 
-        // bonificacion
-
-        if($bonificacion == 0 || $bonificacion == 0.00){
-            $bonificacion = '';
-        }
-        
-        if ($bonificacion == '') {
-            $bonificacion = '';
-        }else{
-            $bonificacion = decimal_0($bonificacion);
-        }
-
-        $linea = $comision['codigo_colaborador'].',
-        '.$comision_val.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.$bonificacion.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',
-        '.',';
+        $linea = $comision['codigo_colaborador'].','.$comision_val.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.',';
 
         fputs($output, $linea . "\n");
     }
 
     fclose($output);
+
 }
 ?>

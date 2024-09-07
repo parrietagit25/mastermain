@@ -1,0 +1,300 @@
+[06-May-2024 19:04:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$2,035.24' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:05:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$2,035.24' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:12:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:20:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$2,829.69' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:21:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$2,829.69' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:23:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:25:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:26:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 19:40:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[06-May-2024 21:19:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[07-May-2024 01:31:23 UTC] PHP Warning:  Undefined variable $username in C:\inetpub\wwwroot\mastermain\models\UserModel.php on line 30
+[07-May-2024 01:31:23 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 81
+[07-May-2024 01:31:23 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 81
+[07-May-2024 01:31:23 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 81
+[07-May-2024 01:31:23 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 81
+[07-May-2024 01:36:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':codigo, :nombre_completo, :genero, :departamento, :stat)' at line 1 in C:\inetpub\wwwroot\mastermain\models\ColaboradorModel.php:15
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\models\ColaboradorModel.php(15): mysqli->prepare()
+#1 C:\inetpub\wwwroot\mastermain\controllers\ColaboradorController.php(22): ColaboradorModel->insert()
+#2 C:\inetpub\wwwroot\mastermain\index.php(42): ColaboradorController->getAndShowAllColab()
+#3 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\models\ColaboradorModel.php on line 15
+[07-May-2024 13:28:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$850.00' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[07-May-2024 13:28:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$850.00' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:93
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(93): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(20): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 93
+[07-May-2024 15:13:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') 
+                                          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:92
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(92): mysqli->prepare()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 92
+[07-May-2024 15:17:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') 
+                                          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,' at line 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:92
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(92): mysqli->prepare()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 92
+[07-May-2024 15:17:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') 
+                                          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,' at line 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:92
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(92): mysqli->prepare()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 92
+[01-Jun-2024 16:27:56 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:27:56 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:27:56 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:27:56 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:29:07 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 65
+[01-Jun-2024 16:29:07 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 129
+[01-Jun-2024 16:29:07 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 130
+[01-Jun-2024 16:29:18 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:29:18 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:29:18 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:29:18 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[01-Jun-2024 16:34:02 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 65
+[01-Jun-2024 16:34:02 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 129
+[01-Jun-2024 16:34:02 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 130
+[01-Jun-2024 17:13:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '$100.00' for column `mastermain`.`comisiones`.`comision` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:94
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(94): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 94
+[04-Jun-2024 21:42:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:94
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(94): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 94
+[04-Jun-2024 21:43:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:94
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(94): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 94
+[05-Jun-2024 16:53:02 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[05-Jun-2024 16:53:02 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[05-Jun-2024 16:53:02 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[05-Jun-2024 16:53:02 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[05-Jun-2024 17:14:19 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 65
+[05-Jun-2024 17:14:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:94
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(94): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 94
+[05-Jun-2024 18:57:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Data truncated for column 'comision' at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:94
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(94): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 94
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:10:42 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 101
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 19:18:20 UTC] PHP Notice:  Only variables should be passed by reference in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 218
+[05-Jun-2024 20:17:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:227
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(227): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 227
+[05-Jun-2024 20:20:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:227
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(227): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 227
+[05-Jun-2024 20:24:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:227
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(227): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 227
+[05-Jun-2024 20:31:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect decimal value: '  -   ' for column `mastermain`.`comisiones`.`bonificacion` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:227
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(227): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(27): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 227
+[06-Jun-2024 16:37:25 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:37:25 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:37:25 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:37:25 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:38:03 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:38:03 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:38:03 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:38:03 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 14
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\views\main.php on line 20
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\views\main.php on line 21
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 22
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\views\main.php on line 20
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\views\main.php on line 21
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 22
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\views\main.php on line 20
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\views\main.php on line 21
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 22
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "user_id" in C:\inetpub\wwwroot\mastermain\views\main.php on line 20
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "username" in C:\inetpub\wwwroot\mastermain\views\main.php on line 21
+[06-Jun-2024 16:42:41 UTC] PHP Warning:  Undefined array key "tipo_usuario" in C:\inetpub\wwwroot\mastermain\views\main.php on line 22
+[03-Jul-2024 17:58:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and stat = 1' at line 1 in C:\inetpub\wwwroot\mastermain\models\JobsModel.php:13
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\models\JobsModel.php(13): mysqli->query()
+#1 C:\inetpub\wwwroot\mastermain\controllers\JobsController.php(21): JobsModel->jobs_list()
+#2 C:\inetpub\wwwroot\mastermain\index.php(74): JobsController->jobs_list()
+#3 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\models\JobsModel.php on line 13
+[04-Jul-2024 02:29:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method MainController::dueback() in C:\inetpub\wwwroot\mastermain\index.php:71
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\index.php on line 71
+[04-Jul-2024 02:40:41 UTC] PHP Warning:  include(views/duebacks.php.php): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\controllers\BuebacksController.php on line 33
+[04-Jul-2024 02:40:41 UTC] PHP Warning:  include(): Failed opening 'views/duebacks.php.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\controllers\BuebacksController.php on line 33
+[04-Jul-2024 02:41:50 UTC] PHP Warning:  include(views/duebacks.php.php): Failed to open stream: No such file or directory in C:\inetpub\wwwroot\mastermain\controllers\BuebacksController.php on line 33
+[04-Jul-2024 02:41:50 UTC] PHP Warning:  include(): Failed opening 'views/duebacks.php.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\mastermain\controllers\BuebacksController.php on line 33
+[05-Jul-2024 02:20:57 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:21:27 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:21:41 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:26:47 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:27:21 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:27:28 UTC] PHP Warning:  Undefined variable $resul_api_due in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 4
+[05-Jul-2024 02:36:37 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 02:37:30 UTC] PHP Warning:  foreach() argument must be of type array|object, string given in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 02:48:32 UTC] PHP Warning:  Undefined variable $data in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 02:48:32 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 02:48:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 02:48:54 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\inetpub\wwwroot\mastermain\views\duebacks.php:42
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\index.php(72): include()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 42
+[05-Jul-2024 03:33:09 UTC] PHP Warning:  Array to string conversion in C:\inetpub\wwwroot\mastermain\views\duebacks.php on line 21
+[05-Jul-2024 13:46:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column `mastermain`.`comisiones`.`fecha_periodo` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:227
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(227): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(29): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 227
+[05-Jul-2024 15:24:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column `mastermain`.`comisiones`.`fecha_periodo` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:236
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(236): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(29): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 236
+[05-Jul-2024 17:04:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column `mastermain`.`comisiones`.`fecha_periodo` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:236
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(236): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(29): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 236
+[05-Jul-2024 20:05:54 UTC] PHP Fatal error:  Uncaught Error: Class "RetencionesControlles" not found in C:\inetpub\wwwroot\mastermain\index.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\index.php on line 19
+[07-Jul-2024 19:48:03 UTC] PHP Warning:  Undefined variable $username in C:\inetpub\wwwroot\mastermain\models\UserModel.php on line 30
+[07-Jul-2024 19:48:21 UTC] PHP Warning:  Undefined variable $retenciones in C:\inetpub\wwwroot\mastermain\index.php on line 80
+[07-Jul-2024 19:48:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function retenciones() on null in C:\inetpub\wwwroot\mastermain\index.php:80
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\index.php on line 80
+[07-Jul-2024 19:57:37 UTC] PHP Fatal error:  Uncaught Error: Class "RetencionesControlles" not found in C:\inetpub\wwwroot\mastermain\index.php:19
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\index.php on line 19
+[07-Jul-2024 20:41:26 UTC] PHP Warning:  Undefined array key "fecha_inicio_due" in C:\inetpub\wwwroot\mastermain\views\retenciones.php on line 27
+[07-Jul-2024 20:41:26 UTC] PHP Warning:  Undefined array key "fecha_fin_due" in C:\inetpub\wwwroot\mastermain\views\retenciones.php on line 28
+[08-Jul-2024 03:16:35 UTC] PHP Warning:  Undefined array key "ruc_prov" in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 21
+[08-Jul-2024 03:16:36 UTC] PHP Warning:  Undefined array key "ruc_prov" in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 38
+[10-Jul-2024 20:16:11 UTC] PHP Warning:  Undefined variable $string in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 52
+[10-Jul-2024 20:16:12 UTC] PHP Warning:  Undefined variable $partes in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 53
+[10-Jul-2024 20:16:12 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 53
+[10-Jul-2024 20:16:53 UTC] PHP Warning:  Undefined variable $partes in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 52
+[10-Jul-2024 20:16:53 UTC] PHP Warning:  Trying to access array offset on null in C:\inetpub\wwwroot\mastermain\controllers\RetencionesController.php on line 52
+[15-Jul-2024 15:33:49 UTC] PHP Warning:  Undefined array key "fecha_inicio_due" in C:\inetpub\wwwroot\mastermain\views\reservadiaanterior.php on line 17
+[03-Aug-2024 15:16:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column `mastermain`.`comisiones`.`fecha_periodo` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:236
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(236): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(33): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 236
+[06-Aug-2024 13:37:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '' for column `mastermain`.`comisiones`.`fecha_periodo` at row 1 in C:\inetpub\wwwroot\mastermain\controllers\MainController.php:236
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\MainController.php(236): mysqli_stmt->execute()
+#1 C:\inetpub\wwwroot\mastermain\index.php(33): MainController->main()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\controllers\MainController.php on line 236

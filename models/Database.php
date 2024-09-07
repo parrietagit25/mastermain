@@ -44,7 +44,7 @@ class Database {
     private $mysql_host = "localhost";
     private $mysql_db_name = "mastermain";
     private $mysql_username = "root";
-    private $mysql_password = "";
+    private $mysql_password = "elchamo1787$$$";
     
     private $sql_server_connection_string = "odbc:Driver={SQL Server};Server=PEDRO\SQLEXPRESS;Database=PCR;Trusted_Connection=yes;";
 
@@ -54,8 +54,8 @@ class Database {
     public function getMySQLConnection() {
         $this->conn = null;
         try {
-            $this->conn = new PDO("mysql:host=" . $this->mysql_host . ";dbname=" . $this->mysql_db_name, $this->mysql_username, $this->mysql_password);
-            $this->conn->exec("set names utf8");
+            $this->conn = new mysqli('localhost', 'root', 'elchamo1787$$$', 'mastermain');
+            //$this->conn->exec("set names utf8");
         } catch(PDOException $exception) {
             echo "Error de conexión MySQL: " . $exception->getMessage();
         }

@@ -16,12 +16,15 @@ if (isset($_POST['jobs']) && $_POST['jobs'] == 1) {  ?>
     <div class="modal-body">
         <p>El archivo .xlsx debe tener el siguiente formato <a href="excel/muestras/MUESTRA_COMISIONES.xlsx">Formato Correccto</a></p>
         Carga las comisiones
-        <input type="file" name="comisiones_file" id="" class="form-control">
+        <input type="file" name="comisiones_file" id="" class="form-control" require>
+        <br>
+        <label for="fecha">Periodo de las comisiones</label>
+        <input type="date" name="fecha_periodo" id="fecha" class="form-control" require>
 
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <input type="submit" class="btn btn-primary" name="subir_comision_colaborador" value="Subir">
+        <input type="submit" class="btn btn-primary" id="subir_comision" onclick="ocultar_boton()" name="subir_comision_colaborador" value="Subir">
     </div>
 </form>
 <?php }elseif (isset($_POST['jobs']) && $_POST['jobs'] == 2) { ?>
@@ -31,7 +34,7 @@ if (isset($_POST['jobs']) && $_POST['jobs'] == 1) {  ?>
             <h1 class="modal-title fs-5" id="exampleModalLabel">Registro de Usuario</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-=
+
         <div class="modal-body">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -48,12 +51,19 @@ if (isset($_POST['jobs']) && $_POST['jobs'] == 1) {  ?>
             <div class="form-group">
                 <label for="tipo_usuario">Tipo de Usuario:</label>
                 <select class="form-control" id="tipo_usuario" name="tipo_usuario">
-                    <option value="admin">Seleccionar</option>
+                <option value="admin">Seleccionar</option>
                     <option value="admin">Admin</option>
                     <option value="rrhh">RRHH</option>
                     <option value="contabilidad">Contabilidad</option>
                     <option value="operaciones">Operaciones</option>
                     <option value="mercadeo">Mercadeo</option>
+                    <option value="cobros">Cobros</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="mina">Mina</option>
+                    <option value="retail">Retail</option>
+                    <option value="ventas_autos">Ventas de autos</option>
+                    <option value="compras">Compras</option>
+                    <option value="reporteria">Reporteria</option>
                 </select>
             </div>
         </div>
@@ -93,11 +103,17 @@ if (isset($_POST['jobs']) && $_POST['jobs'] == 1) {  ?>
             <label for="departamento">Departamento:</label>
             <select class="form-control" id="departamento" name="departamento">
                 <option value="">Seleccionar</option>
-                <option value="admin">Admin</option>
-                <option value="rrhh">RRHH</option>
-                <option value="contabilidad">Contabilidad</option>
-                <option value="operaciones">Operaciones</option>
-                <option value="mercadeo">Mercadeo</option>
+                    <option value="rrhh">RRHH</option>
+                    <option value="contabilidad">Contabilidad</option>
+                    <option value="operaciones">Operaciones</option>
+                    <option value="mercadeo">Mercadeo</option>
+                    <option value="cobros">Cobros</option>
+                    <option value="comercial">Comercial</option>
+                    <option value="mina">Mina</option>
+                    <option value="retail">Retail</option>
+                    <option value="ventas_autos">Ventas de autos</option>
+                    <option value="compras">Compras</option>
+                    <option value="reporteria">Reporteria</option>
             </select>
         </div>
     </div>
@@ -108,4 +124,15 @@ if (isset($_POST['jobs']) && $_POST['jobs'] == 1) {  ?>
     </div>
 </form>
 
+<?php }elseif (isset($_POST['jobs']) && $_POST['jobs'] == 4) {  ?>
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Descargar simulador</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <p>Descarga el ultimo archivo del simulador <a href="excel/simulador/simu.xlsx">Simulador</a></p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
 <?php }  ?> 

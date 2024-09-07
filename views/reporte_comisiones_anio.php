@@ -2,7 +2,7 @@
 <?php include 'header.php'; ?>
 <?php include 'menu.php'; ?>
 <div class="container mt-5">
-    <h2>Reporte a PayDay</h2>
+    <h2>Reporte/Historico de Comisiones</h2>
     <br>
     <br>
     <form action="" method="post">
@@ -14,10 +14,10 @@
     </form>
     <br>
     <?php if (isset($comisiones) && !empty($comisiones)) { ?>
-    <form action="views/rep_comisiones_anio.php" method="post">
+    <form action="views/rep_comisiones_excel.php" method="post">
         <input type="hidden" name="desde" value="<?php echo $_POST['desde']; ?>">
         <input type="hidden" name="hasta" value="<?php echo $_POST['hasta']; ?>">
-        <input type="submit" value="PayDay" class="btn btn-success" name="Reporte de Comisiones">
+        <input type="submit" value="Excel" class="btn btn-success" name="comisiones_excel">
     </form>
     <?php } ?>
     <table class="table table-hover" id="tabla_date">

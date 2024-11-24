@@ -4,7 +4,7 @@
     <div class="row h-100 justify-content-center align-items-center">
         <form class="col-md-4" action="" method="post">
             <img src="assets/img/logo.png" alt="" width="420">
-            <h2 class="text-center">Master Main</h2>
+            <h2 class="text-center">Master Mind</h2>
             <div class="form-group">
                 <label for="username">Email de Usuario:</label>
                 <input type="text" class="form-control" id="username" name="email" required>

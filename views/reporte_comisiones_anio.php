@@ -48,8 +48,27 @@
                 <td><?php echo $comision['honorarios']; ?></td>
                 <td><?php echo $comision['vale']; ?></td>
                 <td><?php echo $comision['fecha_log']; ?></td>
-                <td></td>
+                <td>
+                    <input type="button" value="Editar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDinamicaEditComi<?php echo $comision['id']; ?>" onclick="modal_dinamica_edit_comi(<?php echo $colab['id']; ?>, 1)">
+                    <input type="button" value="Eliminar" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDinamicaElimComi<?php echo $comision['id']; ?>" onclick="modal_dinamica_elim_comi(<?php echo $colab['id']; ?>, 1)">
+                </td>
             </tr>
+                <!-- Modal Dinamica Editar -->
+                <div class="modal fade" id="modalDinamicaEditComi<?php echo $comision['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="modal_dinamico_edit_comi<?php echo $comision['id']; ?>">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Dinamica Eliminar -->
+                <div class="modal fade" id="modalDinamicaElimComi<?php echo $comision['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="modal_dinamico_elim_comi<?php echo $comision['id']; ?>">
+                            
+                        </div>
+                    </div>
+                </div>
             <?php  }
                 } else {
                     echo "No hay comisiones registradas.";
@@ -57,6 +76,10 @@
                     ?>
         </tbody>
     </table>
+
+
+
+
 </div>
 
     <!-- Modal Dinamica -->

@@ -9,6 +9,7 @@ require_once('controllers/MainController.php');
 require_once('controllers/JobsController.php');
 require_once('controllers/ColaboradorController.php');
 require_once('controllers/BuebacksController.php');
+require_once('controllers/rep_comisiones_corp.php');
 require_once('controllers/RetencionesController.php');
 require_once('controllers/ReservaDiaAnteriorController.php');
 
@@ -17,6 +18,7 @@ $mainController = new MainController();
 $jobsController = new JobsController();
 $colaboradorController = new ColaboradorController();
 $duebacks = new BuebacksController();
+$corp = new CorpController();
 $retenciones = new RetencionesController();
 $reservasdiaanterior = new ReservaDelDiaAnteriorController();
 
@@ -77,6 +79,10 @@ if (!isset($_SESSION['user_id'])) {
             case 'duebacks':
                 $resul_api_due = $duebacks->duebacks();
                 include 'views/duebacks.php';
+                break;
+            case 'rep_comisiones_corp':
+                $resul_api_corp = $corp->corp();
+                include 'views/rep_comisiones_corp.php';
                 break;
             case 'reservadiaanterior':
                 $resul_api_diaanterior = $reservasdiaanterior->reservadiaanterior();

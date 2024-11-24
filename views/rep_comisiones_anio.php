@@ -18,7 +18,7 @@ if (isset($_POST['desde']) && isset($_POST['hasta'])) {
     $desde = $mysqli->real_escape_string($_POST['desde']);
     $hasta = $mysqli->real_escape_string($_POST['hasta']);
 
-    $comisiones = $mysqli->query("SELECT * FROM comisiones WHERE fecha_log >= '".$desde."' AND fecha_log <= '".$hasta."'");
+    $comisiones = $mysqli->query("SELECT * FROM comisiones WHERE fecha_periodo >= '".$desde."' AND fecha_periodo <= '".$hasta."'");
 
     $output = fopen('php://output', 'w');
 
@@ -39,7 +39,19 @@ if (isset($_POST['desde']) && isset($_POST['hasta'])) {
             $comision_val = decimal_0($comision_val);
         }
 
-        $linea = $comision['codigo_colaborador'].','.$comision_val.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.','.',';
+        $bonificacion = $comision['bonificacion'];
+        
+        if($bonificacion == 0 || $bonificacion == 0.00){
+            $bonificacion = '';
+        }
+        
+        if ($bonificacion == '') {
+            $bonificacion = '';
+        }else{
+            $bonificacion = decimal_0($bonificacion);
+        }
+
+        $linea = $comision['codigo_colaborador'].','.$comision_val.','.','.','.','.','.','.','.','.','.','.','.$bonificacion.','.','.','.','.','.','.','.',';
 
         fputs($output, $linea . "\n");
     }

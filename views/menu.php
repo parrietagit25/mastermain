@@ -29,6 +29,7 @@
             <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
             <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte PayDay</a></li>
             <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_anio">Reporte de comisiones</a></li>
+            
             <?php } ?>
           </ul>
         </li>
@@ -41,6 +42,8 @@
             <li><a class="dropdown-item" href="index.php?pag=duebacks">Reporte DueBacks</a></li>
             <li><a class="dropdown-item" href="index.php?pag=retenciones">Retenciones</a></li>
             <li><a class="dropdown-item" href="index.php?pag=reservadiaanterior">Reserva dia Anterior</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_corp">Reporte de comisiones Corp</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=rep_pag_web">Reporte de Pagina web</a></li>
           </ul>
         </li>
         <?php } ?>

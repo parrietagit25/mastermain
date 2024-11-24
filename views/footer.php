@@ -29,6 +29,27 @@
                   .catch(error => console.error('Error al cargar el archivo dinamico:', error));
       }
 
+      function modal_dinamica_edit_comi(x, y){
+          console.log('pasamdo');
+          const datos = new URLSearchParams(x);
+          datos.append('id_edit', x);
+          datos.append('edit', y);
+          const opciones = {
+              method: 'POST', 
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded' 
+              },
+              body: datos 
+          };
+          fetch('views/carga_dinamica_edit.php', opciones)
+                  .then(response => response.text()) 
+                  .then(data => {
+                      const div = document.getElementById('modal_dinamico_edit' + x);
+                      div.innerHTML = data;
+                  })
+                  .catch(error => console.error('Error al cargar el archivo dinamico:', error));
+        }
+
       function modal_dinamica_edit(x, y){
           console.log('pasamdo');
           const datos = new URLSearchParams(x);
@@ -54,6 +75,26 @@
           const datos = new URLSearchParams(x);
           datos.append('eli_id', x);
           datos.append('elimnar', 1);
+          const opciones = {
+              method: 'POST', 
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded' 
+              },
+              body: datos 
+          };
+          fetch('views/carga_dinamica_elim.php', opciones)
+                  .then(response => response.text()) 
+                  .then(data => {
+                      const div = document.getElementById('modal_dinamico_elim' + x);
+                      div.innerHTML = data;
+                  })
+                  .catch(error => console.error('Error al cargar el archivo dinamico:', error));
+      }
+
+      function modal_dinamica_elim_comi(x, y){
+          const datos = new URLSearchParams(x);
+          datos.append('eli_id', x);
+          datos.append('elimnar', 2); // comosion
           const opciones = {
               method: 'POST', 
               headers: {

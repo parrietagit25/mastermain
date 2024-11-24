@@ -26,7 +26,7 @@ if (isset($_POST['desde']) && isset($_POST['hasta'])) {
     $desde = $mysqli->real_escape_string($_POST['desde']);
     $hasta = $mysqli->real_escape_string($_POST['hasta']);
 
-    $comisiones = $mysqli->query("SELECT * FROM comisiones WHERE fecha_log >= '$desde' AND fecha_log <= '$hasta'");
+    $comisiones = $mysqli->query("SELECT * FROM comisiones WHERE fecha_periodo >= '$desde' AND fecha_periodo <= '$hasta'");
 
     if ($comisiones === false) {
         die("Error en la consulta: " . $mysqli->error);

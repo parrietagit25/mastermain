@@ -1,12 +1,15 @@
 <?php 
 
 class Database {
-    private $mysql_host = "localhost";
+    private $mysql_host = "10.10.2.6";
     private $mysql_db_name = "mastermain";
     private $mysql_username = "root";
     private $mysql_password = "elchamo1787$$$";
     
-    private $sql_server_connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER=10.10.2.25;DATABASE=PCR;UID=Pcrdwh;PWD=dPcrdwhV646!$W';
+    private $sql_server_host = "10.10.2.25";
+    private $sql_server_db_name = "PCR";
+    private $sql_server_username = "Pcrdwh";
+    private $sql_server_password = 'dPcrdwhV646!$W';
 
     protected $conn;
 
@@ -14,9 +17,9 @@ class Database {
     public function getMySQLConnection() {
         $this->conn = null;
         try {
-            $this->conn = new mysqli('localhost', 'root', 'elchamo1787$$$', 'mastermain');
+            $this->conn = new mysqli($this->mysql_host, $this->mysql_username, $this->mysql_password, $this->mysql_db_name);
             //$this->conn->exec("set names utf8");
-        } catch(PDOException $exception) {
+        } catch (PDOException $exception) {
             echo "Error de conexión MySQL: " . $exception->getMessage();
         }
         return $this->conn;
@@ -26,8 +29,9 @@ class Database {
     public function getSQLServerConnection() {
         $this->conn = null;
         try {
-            $this->conn = new PDO($this->sql_server_connection_string);
-            // Configuraciones adicionales para SQL Server pueden ir aquí
+            $dsn = "sqlsrv:Server={$this->sql_server_host};Database={$this->sql_server_db_name}";
+            $this->conn = new PDO($dsn, $this->sql_server_username, $this->sql_server_password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $exception) {
             echo "Error de conexión SQL Server: " . $exception->getMessage();
         }
@@ -39,4 +43,3 @@ class Database {
         $this->conn = null;
     }
 }
-

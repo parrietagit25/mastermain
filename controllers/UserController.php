@@ -21,6 +21,16 @@ class UserController {
         include 'views/register_user.php';
     }
 
+    public function cambiar_pass($val){
+
+        $cambiar_pass = password_hash($val['cambiar_pass'], PASSWORD_DEFAULT);
+
+        $pass = $this->model->actualizar_pass($val['id_user_cambiar_pass'], $cambiar_pass, 'usuarios');
+
+        return 'Password Actualizada';
+
+    }
+
     public function login() {
 
         if (isset($_POST['session'])) {

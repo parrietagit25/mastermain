@@ -25,6 +25,8 @@
             Kuruma
           </a>
           <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="index.php?pag=finanzas">FINANZAS</a></li>
+          <li><a class="dropdown-item" href="index.php?pag=comercial">COMERCIAL</a></li>
               <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'rrhh'){ ?>
             <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
             <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte PayDay</a></li>

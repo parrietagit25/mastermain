@@ -29,7 +29,13 @@
                 <td><?php echo $user['email']; ?></td>
                 <td><?php echo $user['tipo_usuario']; ?></td>
                 <td><?php echo $user['fecha_log']; ?></td>
-                <td> <input type="button" value="Editar" class="btn btn-primary"><input type="button" value="Pass" class="btn btn-danger"> </td>
+                <td> 
+                    <input type="button" value="Editar" class="btn btn-primary">
+                    <input type="button" value="Pass" class="btn btn-danger" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#modalDinamicaPass" 
+                    onclick="cambiar_pass_dinamica(<?php echo $user['id']; ?>);">
+                </td>
             </tr>
             <?php  }
                 } else {
@@ -45,6 +51,15 @@
         <div class="modal-dialog">
             <div class="modal-content" id="modal_dinamico">
                 
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para cambiar contraseña -->
+    <div class="modal fade" id="modalDinamicaPass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal_dinamico_pass">
+                <!-- Aquí se cargará el contenido dinámico -->
             </div>
         </div>
     </div>

@@ -12,6 +12,7 @@ require_once('controllers/BuebacksController.php');
 require_once('controllers/rep_comisiones_corp.php');
 require_once('controllers/RetencionesController.php');
 require_once('controllers/ReservaDiaAnteriorController.php');
+require_once('controllers/ComercialController.php');
 
 $userController = new UserController();
 $mainController = new MainController();
@@ -21,9 +22,14 @@ $duebacks = new BuebacksController();
 $corp = new CorpController();
 $retenciones = new RetencionesController();
 $reservasdiaanterior = new ReservaDelDiaAnteriorController();
+$comerciaController = new Comercial();
 
 $listado_no_list_comi = "";
 
+if (isset($_POST['cambiar_pass_user'])) {
+    $var_post = $_POST;
+    $reg_colb = $userController->cambiar_pass($var_post);
+}
 
 
 if (isset($_POST['registrar_colaborador'])) {
@@ -93,6 +99,10 @@ if (!isset($_SESSION['user_id'])) {
                 $retenciones_print = $retenciones->enviar_retenciones();
                 $retenciones_enviadas = $retenciones->send_reten();
                 include 'views/retenciones.php';
+                break;
+            case 'comercial':
+                $gerCentroCosto = $comerciaController->getCentroCosto();
+                include 'views/comercial.php';
                 break;
             default:
                 $jobsController->jobs_list();

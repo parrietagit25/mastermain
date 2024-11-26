@@ -9,6 +9,16 @@ class UserModel extends Database {
         parent::__construct();
     } */
 
+    public function actualizar_pass($id_user, $pass, $table){
+
+        $conn = $this->getMySQLConnection();
+
+        $stmt = $conn->query("UPDATE $table SET pass = '".$pass."' WHERE id = '".$id_user."'");
+
+        return true;
+
+    }
+
     public function inicio_session($email, $password) {
         $conn = $this->getMySQLConnection();
         /* $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = :email");

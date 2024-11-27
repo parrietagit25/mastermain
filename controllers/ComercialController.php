@@ -13,5 +13,12 @@ class Comercial{
         return $this->model->getCentroCostro();
     }
 
+    public function getCateCliente(){
+        return $this->model->getCateCliente();
+    }
+
+    public function getTarifaVehiculo(){
+        return $this->model->getTarifaVehiculo();
+    }
 
 }

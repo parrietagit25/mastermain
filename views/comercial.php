@@ -58,7 +58,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Datos dinámicos -->
+                <?php foreach ($gerCentroCosto as $key => $value) { ?>
+                    <tr>
+                        <th><?php echo $value['centroCosto']; ?></th>
+                        <th><?php echo $value['mantenimiento']; ?></th>
+                        <th><?php echo $value['crecimiento']; ?></th>
+                        <th><?php echo $value['nuevo']; ?></th>
+                    </tr>
+                <?php } ?>
                 </tbody>
             </table>
         </div>
@@ -101,7 +108,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Datos dinámicos -->
+                <?php foreach ($gerCateCliente as $key => $value) { ?>
+                    <tr>
+                        <th><?php echo $value['catCte']; ?></th>
+                        <th><?php echo $value['mantenimientocatCte']; ?></th>
+                        <th><?php echo $value['crecimientocatCte']; ?></th>
+                        <th><?php echo $value['NuevocatCte']; ?></th>
+                    </tr>
+                <?php } ?>
                 </tbody>
             </table>
         </div>
@@ -130,7 +144,7 @@
                     </div>
                 </div>
             </form>
-            <table class="table table-bordered">
+            <table class="table table-hover" id="tabla_date">
                 <thead>
                     <tr>
                         <th>Categoría</th>
@@ -143,7 +157,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Datos dinámicos -->
+                <?php foreach ($gerVehiculeRate as $key => $value) { ?>
+                    <tr>
+                        <th><?php echo $value['invclass']; ?></th>
+                        <th><?php echo $value['rate']; ?></th>
+                        <th><?php echo $value['superOptimal']; ?></th>
+                        <th><?php echo $value['CentroCostos']; ?></th>
+                        <th><?php echo $value['payment1']; ?></th>
+                        <th><?php echo $value['payment2']; ?></th>
+                        <th><?php echo $value['payment3']; ?></th>
+                    </tr>
+                <?php } ?>
                 </tbody>
             </table>
         </div>

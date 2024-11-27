@@ -17149,3 +17149,19 @@ Stack trace:
 #1 C:\inetpub\wwwroot\mastermain\index.php(104): Comercial->getCentroCosto()
 #2 {main}
   thrown in C:\inetpub\wwwroot\mastermain\models\ComercialModel.php on line 11
+[26-Nov-2024 16:30:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::fetch_array() in C:\inetpub\wwwroot\mastermain\models\ComercialModel.php:12
+Stack trace:
+#0 C:\inetpub\wwwroot\mastermain\controllers\ComercialController.php(13): ComercialModel->getCentroCostro()
+#1 C:\inetpub\wwwroot\mastermain\index.php(104): Comercial->getCentroCosto()
+#2 {main}
+  thrown in C:\inetpub\wwwroot\mastermain\models\ComercialModel.php on line 12
+[27-Nov-2024 18:35:13 UTC] PHP Warning:  Undefined array key "mantenimientoCte" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 114
+[27-Nov-2024 18:35:13 UTC] PHP Warning:  Undefined array key "crecimientoCte" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 115
+[27-Nov-2024 18:35:13 UTC] PHP Warning:  Undefined array key "NuevoCte" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 116
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "invclass" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 161
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "rate" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 162
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "superOptimal" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 163
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "CentroCostos" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 164
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "payment1" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 165
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "payment2" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 166
+[27-Nov-2024 18:47:20 UTC] PHP Warning:  Undefined array key "payment3" in C:\inetpub\wwwroot\mastermain\views\comercial.php on line 167

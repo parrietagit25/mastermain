@@ -102,6 +102,8 @@ if (!isset($_SESSION['user_id'])) {
                 break;
             case 'comercial':
                 $gerCentroCosto = $comerciaController->getCentroCosto();
+                $gerCateCliente = $comerciaController->getCateCliente();
+                $gerVehiculeRate = $comerciaController->getTarifaVehiculo();
                 include 'views/comercial.php';
                 break;
             default:

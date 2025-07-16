@@ -1,3 +1,4 @@
+"""
 from flask import Flask, request, jsonify
 from reportlab.pdfgen import canvas
 import pyodbc
@@ -6,7 +7,12 @@ import smtplib
 from email.message import EmailMessage
 import shutil
 import os
+import sys
+import time
+"""
 
+print('Entro al py')
+"""
 app = Flask(__name__)
 
 @app.route('/generate_report', methods=['POST'])
@@ -140,7 +146,8 @@ def generate_report():
         #email = "pedroarrieta25@hotmail.com"
         msg = EmailMessage()
         msg["From"] = "notificaciones@grupopcr.com.pa"
-        msg["To"] = email
+        msg["To"] = "pedroarrieta25@hotmail.com" 
+        #email
         msg["Subject"] = "Retenciones"
         msg.set_content("Se anexa reporte de retenciones enviadas.")
 
@@ -179,3 +186,4 @@ def generate_report():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+    """

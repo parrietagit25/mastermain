@@ -28,20 +28,22 @@
           <li><a class="dropdown-item" href="index.php?pag=finanzas">FINANZAS</a></li>
           <li><a class="dropdown-item" href="index.php?pag=comercial">COMERCIAL</a></li>
               <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'rrhh'){ ?>
-            <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
-            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte PayDay</a></li>
-            <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_anio">Reporte de comisiones</a></li>
+              <li><a class="dropdown-item" href="index.php?pag=reg_colab">Registrar Colaborador</a></li>
+              <li><a class="dropdown-item" href="index.php?pag=rep_comisiones">Reporte PayDay</a></li>
+              <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_anio">Reporte de comisiones</a></li>
+              <li><a class="dropdown-item" href="index.php?pag=form_int">Formulario de Ingreso</a></li>
             
             <?php } ?>
           </ul>
         </li>
-        <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'reporteria' || $_SESSION['tipo_usuario'] == 'comi-repor'){ ?>
+        <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'reporteria' || $_SESSION['tipo_usuario'] == 'comi-repor' || $_SESSION['tipo_usuario'] == 'no_definido'){ ?>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Reportes
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?pag=duebacks">Reporte DueBacks</a></li>
+            <li><a class="dropdown-item" href="index.php?pag=overdue">Reporte OverDue</a></li>
             <li><a class="dropdown-item" href="index.php?pag=retenciones">Retenciones</a></li>
             <li><a class="dropdown-item" href="index.php?pag=reservadiaanterior">Reserva dia Anterior</a></li>
             <li><a class="dropdown-item" href="index.php?pag=rep_comisiones_corp">Reporte de comisiones Corp</a></li>
@@ -49,6 +51,24 @@
           </ul>
         </li>
         <?php } ?>
+        <?php if($_SESSION['tipo_usuario'] == 'admin' || $_SESSION['tipo_usuario'] == 'pbi'){ ?>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PBI
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.php?pag=cumplimiento">PBI Cumplimiento</a></li>
+          </ul>
+        </li>
+        <?php } ?>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Reservas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.php?pag=reservas">Horario Reservas</a></li>
+          </ul>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Perfil

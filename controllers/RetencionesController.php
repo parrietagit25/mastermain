@@ -31,21 +31,30 @@ class RetencionesController {
     }
 
     public function send_reten(){
+        echo 'Entro a la funcion send_reten()';
         if(isset($_POST['retenciones_enviar_mail'])){
 
+            echo '<br>Entro a la funcion send_reten() en el post';
+
            // echo 'Pasando';
-            /*
+            
             $fecha_inicio = $_POST["fecha_inicio_ret_send"]; 
             $fecha_fin = $_POST["fecha_fin_ret_send"];
             $ruc_prov = $_POST["ruc_prov_send"];
+
+            echo $fecha_inicio.'<br>';
+            echo $fecha_fin.'<br>';
+            echo $ruc_prov.'<br>';
+
             //echo $fecha_inicio.' '.$fecha_fin.' '.$ruc_prov;
             $pythonPath = 'C:\\Program Files\\Python311\\python.exe';
             $scriptPath = 'C:\\inetpub\\wwwroot\\mastermain\\python\\generate_pdf\\prueba2.py';
             $command = "\"$pythonPath\" \"$scriptPath\" " . escapeshellarg($fecha_inicio) . ' ' . escapeshellarg($fecha_fin) . ' ' . escapeshellarg($ruc_prov);
             $output = shell_exec($command);
             //echo "<pre>$output</pre>";
-            return $output; */
+            return $output; /* */
 
+            /*
             $fecha_inicio = $_POST['fecha_inicio_ret_send'];
             $fecha_fin = $_POST['fecha_fin_ret_send'];
             $ruc_prov = explode(" ", $_POST['ruc_prov_send']);
@@ -79,7 +88,7 @@ class RetencionesController {
             // Cerrar cURL
             curl_close($ch);
             
-            return $response;
+            return $response; */
 
         }
     }

@@ -11,18 +11,6 @@ $jobsController = new JobsController();
     
     <?php foreach ($jobsController->jobs_list() as $key => $value) { ?>
 
-        <?php /* if($_SESSION['tipo_usuario'] == 'rrhh'){ 
-                if ($value['id'] != 1) {
-                    continue;
-                }
-              }
-              
-            echo $_SESSION['user_id'].'<br>';
-            echo $_SESSION['username'].'<br>';
-            echo $_SESSION['tipo_usuario'].'<br>'; */ 
-              
-              ?>
-
         <?php if($_SESSION['tipo_usuario'] == 'reporteria'){ }else{ ?>
 
         <div class="card text-center" style="width:300px; float:left; margin:5px;">
@@ -48,6 +36,16 @@ $jobsController = new JobsController();
     <?php if (!empty($listado_no_list_comi) && is_array($listado_no_list_comi)) { ?>
 
     <div class="container">
+
+        <?php if(isset($listado_no_list_comi['reg_realizado'])){ ?>
+
+        <div class="alert alert-success alert-dismissible fade show position-fixed top-0 end-0 mt-3 me-3" role="alert" style="z-index: 1050;">
+            <strong>¡Registro realizado con éxito!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <?php }elseif (isset($listado_no_list_comi['no_listado'])) { ?>
+
         <div class="card text-center" style="width:300px; float:left; margin:5px;">
             <div class="card-header" style="color:red;">
                 Codigo de colaborador no registrado
@@ -75,6 +73,9 @@ $jobsController = new JobsController();
                 Cantidad: <?php //count($listado_no_list_comi['comision_existente']); ?>
             </div>
         </div>
+
+        <?php } ?>
+
     </div>
 
     <?php } ?>

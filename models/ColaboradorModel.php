@@ -85,7 +85,8 @@ class ColaboradorModel extends Database {
         }else{
         $lista_rep = [];
         $conn = $this->getMySQLConnection();
-        $stmt = $conn->query("SELECT * FROM comisiones WHERE fecha_periodo >= '".$desde."' AND fecha_periodo <= '".$hasta."' $where");
+        //$stmt = $conn->query("SELECT * FROM comisiones WHERE fecha_periodo >= '".$desde."' AND fecha_periodo <= '".$hasta."' $where");
+        $stmt = $conn->query("SELECT * FROM comisiones WHERE fecha_log >= '".$desde."' AND fecha_log <= '".$hasta."' $where");
         while ($list = $stmt->fetch_array()) {
             $lista_rep[] = $list; 
         }
